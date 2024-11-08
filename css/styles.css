@@ -1,0 +1,1040 @@
+/*ПІДКЛЮЧЕННЯ ШРИФТІВ*/
+@font-face {
+    font-family: "NAMU pro";
+    src: url("../fonts/NAMU_TF_2022_v1804/OTF_PS/NAMU-Pro.otf");
+}
+
+@font-face {
+    font-family: "NAMU 1750";
+    src: url("../fonts/NAMU_TF_2022_v1804/OTF_PS/NAMU-1750.otf");
+}
+
+@font-face {
+    font-family: "NAMU 1600";
+    src: url("../fonts/NAMU_TF_2022_v1804/OTF_PS/NAMU-1600.otf");
+}
+
+@font-face {
+    font-family: "NAMU Tryzub";
+    src: url("../fonts/NAMU_TF_2022_v1804/OTF_PS/NAMU-Tryzub.otf");
+}
+
+
+/* ЗАГАЛЬНІ СТИЛІ */
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #F9F9F9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+header a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-family: "NAMU 1750";
+    gap: 30px;
+}
+
+main {
+    padding-bottom: 80px; 
+    flex: 1; 
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 20px 33px 33px 33px;
+    display: flex;
+    width: 100%;
+}
+
+/*елементи хедеру*/
+#additionaly {
+    font-size: 15px;
+    position: absolute;
+    left: 13px; 
+}
+
+#signin {
+    font-size: 15px;
+    position: absolute;
+    right: 13px;
+}
+
+#logo-back {
+    font-size: 20px;
+    font-family: "NAMU 1600";
+    color: #FDD835;
+    position: absolute;
+    left: 24px; 
+}
+
+#logo-back:hover {
+    color: #FF7C38;
+}
+
+#button-back {
+    position: absolute;
+    left: 13px; 
+    font-size: 15px;
+}
+
+.page-title {
+    font-size: 24px;
+    font-family: "NAMU 1750";
+    text-align: center;
+}
+
+/* ГОЛОВНА СТОРІНКА */
+.logo {
+    font-size: 48px;
+    font-family: "NAMU 1600";
+    color: #FDD835;
+    position: relative;
+}
+
+.logo:hover {
+    color: #FF7C38;;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.main-page-text {
+    font-size: 18px;
+    font-family: "NAMU 1750";
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.map {
+    width: 100%;
+    height: 294px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative; 
+    display: inline-block; 
+}
+
+.map img {
+    width: 100%;
+    display: block;
+}
+
+.location_main_icon {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 38px; 
+    height: 38px;
+}
+
+.small-text {
+    font-family: "NAMU pro";
+    font-size: 11px;
+    margin: 0;
+}
+
+.recently-seen {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.recently-seen h3 {
+    font-family: "NAMU pro";
+    font-size: 19px;
+    margin: 0;
+    text-align: left;
+}
+
+.recently-seen-establishments {
+    margin-top: 10px;
+    display: flex;
+    max-width: 353px;
+    overflow-x: scroll; 
+    -webkit-overflow-scrolling: touch; 
+    scrollbar-width: none; 
+    border: none;
+    border-radius: 20px;
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.recently-seen-establishments a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.recently-seen-establishments::-webkit-scrollbar {
+    display: none; 
+}
+
+.recently-seen-establishment {
+    font-size: 15px;
+    font-family: "NAMU pro";
+    margin-right: 10px;
+    
+}
+
+.recently-seen-establishment p {
+    margin: 0; 
+}
+
+.special-offers h3{
+    font-family: "NAMU pro";
+    font-size: 19px;
+    margin-top: 60px;
+}
+
+.special-offers img {
+    margin-top: -4px;
+}
+
+.special-offer-baners {
+    margin-top: 20px;
+}
+
+.special-offer-baners img {
+    margin-bottom: 10px;
+}
+
+.liked-establishments {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.liked-establishments h3 {
+    font-family: "NAMU pro";
+    font-size: 19px;
+}
+
+.dropdown {
+    display: none; 
+    list-style-type: none;
+}
+
+.dropdown.show {
+    display: block; 
+}
+
+.liked-establishments {
+    cursor: pointer;
+}
+
+.arrow {
+    transition: transform 0.4s ease; 
+}
+
+.arrow.rotate {
+    transform: rotate(90deg); 
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 209px;
+}
+
+.buttons filter-only {
+    align-items: flex-start;
+}
+
+.button filter-and-establishment {
+    width: 248px;
+}
+
+.button {
+    width: 59px;
+    height: 59px;
+    background-color: #FDD835;
+    border: none;
+    border-radius: 30px;
+    font-family: "NAMU pro";
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    padding: 14px;
+    position: relative;
+}
+
+#establishment {
+    margin-right: 33px; 
+}
+
+#filter {
+    margin-left: 33px; 
+}
+/* ГОЛОВНА СТОРІНКА кінець*/
+
+/* СТОРІНКА "ЗАКЛАДИ" */
+#filter-only {
+    left: 33px;
+}
+
+.groups > div {
+    font-family: "NAMU pro";
+    display: flex;         
+    justify-content: space-between; 
+    flex-direction: column;
+    align-items: center;    
+    margin-bottom: 15px;    
+    margin-top: 20px;
+}
+
+.title-and-arrow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.group {
+    cursor: pointer;
+}
+
+.group img {
+    transition: transform 0.4s ease; 
+}
+
+.establishment-details img {
+    transform: rotate(90deg); 
+}
+
+.establishment-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    gap: 50px;  
+    margin-top: 10px;
+    font-family: "NAMU pro";
+}
+
+.location {
+    flex-direction: row-reverse;
+    display: flex;
+    gap: 4px;
+    font-family: "NAMU pro";
+}
+
+ul.dropdown {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: none; 
+    background-color: #F9F9F9;
+    border-radius: 5px;
+    width: 100%;
+}
+
+ul.dropdown li {
+    border-bottom: 0.5px solid #FFED9E;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px; 
+}
+
+ul.dropdown li:last-child {
+    border-bottom: none;
+}
+
+ul.dropdown li a {
+    text-decoration: none;
+    color: #333;
+}
+
+h3 {
+    font-size: 19px;
+    margin: 0;
+}
+
+.arrow {
+    width: 24px;
+    height: 24px;
+}
+
+.groups a {
+    text-decoration: none;
+    color: inherit; 
+    cursor: pointer; 
+}
+
+#arrow-back {
+    position: absolute;
+    left: 24px; 
+}
+
+.restaurants {
+    margin: 20px 0 0 0;
+    display: flex; 
+    background-color: #F9F9F9;
+    flex-direction: column;
+    justify-content: space-between; 
+    flex-direction: column;
+}
+
+.restaurants a {
+    border-bottom: 0.5px solid #FFED9E;
+    border-radius: 0;
+    padding-bottom: 10px; 
+}
+
+.restaurants a:last-child {
+    border-bottom: none; 
+   
+}
+
+.restaurants a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.restaurant {
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F9F9F9;
+    border-radius: 8px;
+    margin-top: 10px;
+    align-items: flex-start;
+    align-content: space-between;
+}
+
+.restaurant-photo {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px; 
+    margin-top: 4px;
+    text-align: left; 
+    font-family: "NAMU pro";
+}
+
+.info p {
+    margin: 0;
+    font-size: 10px;
+}
+
+.cuisine-type {
+    font-size: 12px;
+    color: #333;
+    
+}
+
+.offer {
+    font-size: 11px;
+    color: #7D7D7D;
+
+}
+
+.price {
+    font-size: 10px;
+    margin: 0;
+}
+
+.district {
+    font-size: 10px;
+    color: #333;
+    margin: 0;
+    white-space: nowrap; 
+}
+
+.rating {
+    display: flex;
+}
+
+.rating-icon {
+    rotate: 270deg; 
+    width: 80px;
+    height: auto;
+}
+
+.location-icon {
+    rotate: 270deg; 
+    width: 15px;
+    margin-right: 5px;
+}
+/* СТОРІНКА "ЗАКЛАДИ" кінець*/
+
+/* ІНФОРМАЦІЯ ПРО РЕСТОРАН */
+#like-button {
+    display: flex;
+    margin-right: 33px; 
+}
+
+h4 {
+    font-size: 15px;
+    margin-top: 0;
+    font-family: "NAMU pro";
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.gallery-scroll {
+    margin-top: 5px;
+    display: flex;
+    max-width: 353px;
+    overflow-x: scroll; 
+    -webkit-overflow-scrolling: touch; 
+    scrollbar-width: none; 
+    border: none;
+    border-radius: 20px;
+    gap: 5px;
+}
+
+.location-details {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 4px;
+    flex-direction: row
+}
+
+.phone-number {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 4px;   
+    text-align: right;
+
+}
+
+.website {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 4px;
+    text-align: right;
+}
+
+.restaurant-details {
+    font-family: "NAMU pro";
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    margin-top: 20px;
+} 
+
+.about-restaurant {
+    font-family: "NAMU pro";
+    font-size: 15px;
+    text-align: justify;
+    gap: 4px;
+    padding: 0;
+}
+
+.location-details:hover img {
+    filter: invert(47%) sepia(98%) saturate(746%) hue-rotate(358deg) brightness(95%) contrast(102%);
+}
+
+.phonenumber-website div:hover img {
+    filter: invert(47%) sepia(98%) saturate(746%) hue-rotate(358deg) brightness(95%) contrast(102%);
+}
+
+.about-restaurant h3 {
+    margin-left: 13px;
+    
+}
+
+.phonenumber-website {
+    display: flex;
+    align-items: flex-end; 
+    gap: 10px; 
+    flex-direction: column;
+}
+
+.phonenumber-website > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px  ;
+}
+
+.restaurant-details p {
+    margin: 0; 
+}
+
+.about-restaurant {
+    margin-top: 10px;
+}
+
+.about-restaurant p {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.about-restaurant-details > div {
+    font-family: "NAMU pro";
+    font-size: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: justify;
+    gap: 4px;
+    flex-direction: row;
+}
+
+.about-restaurant-details p {
+    margin: 10px 0;
+}
+
+.location-map {
+    font-family: "NAMU pro";
+    font-size: 12px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.location-map h3 {
+    margin-left: 13px;
+}
+
+.location-map p {
+    font-size: 11px;
+    margin: 0;
+    text-align: center;
+}
+
+.location-map img {
+    margin: 4px 0;
+}
+
+#map {
+    height: 100px;
+    width: 353px;
+    margin: 4px 0;
+}
+
+.feedback {
+    font-family: "NAMU pro";
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.feedback h3 {
+    margin-left: 13px;
+}
+
+h5 {
+    margin: 0;
+}
+
+.avatar-nickname {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.avatar-nickname-rating {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    justify-content: space-between
+}
+
+.avatar-nickname-rating img {
+    display: flex;
+    justify-content: flex-end
+}
+
+.feedback-content {
+    margin-top: 10px; 
+}
+
+.feedback p {
+    color: #848484; 
+    font-size: 15px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.more-button {
+    font-family: "NAMU pro";
+    font-size: 11px;
+    color: #333;
+    margin: 0;
+}
+/* ІНФОРМАЦІЯ ПРО РЕСТОРАН кінець*/
+
+/*ФІЛЬТР*/
+#filter-wide {
+    width: 248px;
+    height: 59px;
+    left: 33px;
+}
+
+h2 {
+    font-family: "NAMU pro";
+    font-size: 20px;
+    margin: 0;              
+    text-align: left;
+    display: flex;
+    left: 13px;
+}
+
+.district-filter {
+    /*font-family: "NAMU Tryzub";*/
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.district-option {
+    display: flex;
+    gap: 33px;
+}
+
+.district-filter h2{
+    display: flex;
+    left: 13px;
+    
+}
+
+.district-option p {
+    display: flex;
+    flex-direction: column;
+    border: #FDD835 solid 1px;
+    border-radius: 30px;
+    padding: 4px 0;
+    font-size: 16px;
+    font-family: "NAMU pro";
+    width: 147px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+
+.district-option p:hover {
+    background-color: #FDD835;
+}
+
+.price-category-filter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.price-category-filter h2 {
+    left: 13px; 
+}
+
+.price-category-option {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.price-category-option p {
+    border: #FDD835 solid 1px;
+    border-radius: 30px;
+    padding: 4px 0;
+    font-size: 16px;
+    font-family: "NAMU pro";
+    width: 47%; 
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.price-category-option p:hover {
+    background-color: #FDD835;
+}
+
+.price-category-option p:last-child {
+    width: 100%; 
+    text-align: center; 
+    margin-top: 0;
+}
+
+.cuisine-filter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.cuisine-filter i {
+    width: 18px;
+    height: 18px;
+}
+
+.cuisine-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 0.5px solid #FFED9E;
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+
+.cuisine-option p {
+    font-family: "NAMU pro";
+    color: #BCBCBC;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.good-for-filter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.good-for-option {
+    display: flex;
+    gap: 33px;
+}
+
+.good-for-filter h2 {
+    display: flex;
+    left: 13px;
+}
+
+.good-for-option p {
+    display: flex;
+    flex-direction: column;
+    border: #FDD835 solid 1px;
+    border-radius: 30px;
+    padding: 4px 0;
+    font-size: 16px;
+    font-family: "NAMU pro";
+    width: 147px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.good-for-option p:hover {
+    background-color: #FDD835;
+}
+
+.special-offer-filter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.special-offer-option {
+    display: flex;
+    gap: 33px;
+}
+
+.special-offer-filter h2 {
+    display: flex;
+    left: 13px;
+}
+
+.special-offer-option p {
+    display: flex;
+    flex-direction: column;
+    border: #FDD835 solid 1px;
+    border-radius: 30px;
+    padding: 4px 0;
+    font-size: 16px;
+    font-family: "NAMU pro";
+    width: 147px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.special-offer-option p:hover {
+    background-color: #FDD835;
+}
+
+.rate-filter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.rate-option {
+    display: flex;
+    gap: 38px;
+}
+
+.rate-filter h2 {
+    display: flex;
+    left: 13px;
+}
+
+.rate-option p {
+    display: flex;
+    flex-direction: column;
+    border: #FDD835 solid 1px;
+    border-radius: 30px;
+    justify-content: center;
+    font-size: 16px;
+    font-family: "NAMU pro";
+    width: 35px;
+    height: 35px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.rate-option p:hover {
+    background-color: #FDD835;
+}
+/* КІНЕЦЬ СТОРІНКИ "ФІЛЬТР" */
+
+/* СТОРІКА "МОВА" */
+.language-filter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.language-option {
+    display: flex;
+    gap: 33px;
+}
+
+.language-filter h2{
+    display: flex;
+    left: 13px;
+    
+}
+
+.language-option p {
+    display: flex;
+    flex-direction: column;
+    border: #FDD835 solid 1px;
+    border-radius: 30px;
+    padding: 4px 0;
+    font-size: 16px;
+    font-family: "NAMU pro";
+    width: 147px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+}
+
+.language-option p:hover {
+    background-color: #FDD835;
+}
+/* КІНЕЦЬ СТОРІНКИ "МОВА" */
+
+/* СОТРІНКА "ВХІД" */
+.signin-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 200px;
+}
+
+.signin-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #FFD700; 
+    border-radius: 30px; 
+    padding: 16px;
+    font-size: 19px;
+    width: 327px;
+    color: #333; 
+    font-family: "NAMU pro";
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.signin-button:hover {
+    background-color: #FFD700; 
+}
+
+.signin-google img {
+    width: 61px;
+    height: 21px;
+    margin-left: 5px;
+}
+
+.signin-apple i {
+    margin-left: 5px;
+}
+
+.signin-google p,
+.signin-gmail p,
+.signin-apple p {
+    margin: 0;
+}
+
+.signin-google p {
+    display: inline-block;
+    margin-right: 5px;
+}
+/* КІНЕЦЬ СТОРІНКИ "ВХІД" */
+
+/* СТОРІНКА З ВИБІРКОЮ */
+#location-button {
+    margin-right: 33px;
+}
+
+.selected-options p{
+    display: flex;
+    flex-direction: column;
+    border: #FDD835 solid 1px;
+    border-radius: 30px;
+    padding: 5px 30px;
+    font-size: 16px;
+    font-family: "NAMU pro";
+    margin-bottom: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    margin-bottom: 0;
+}
+
+.selected-options {
+    margin-top: 20px;
+    margin-bottom: 0;
+    display: flex;
+    max-width: 353px;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch; 
+    scrollbar-width: none; 
+    gap: 5px;
+}
+/* КІНЕЦЬ СТОРІНКИ З ВИБІРКОЮ */
+
+
+
+
+
+
+

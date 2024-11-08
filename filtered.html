@@ -1,0 +1,107 @@
+<!-- establishments.html -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Варіанти</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="img/ICON.png " rel="icon">
+</head>
+<body>
+    <!--Хедер-->
+    <header>
+        <a id="button-back" href="filter.html">назад</a>
+        <div class="page-title">заклади</div>
+        <a id="signin" href="signin.html">вхід</a>
+    </header>
+    <!--Кінець блоку Хедер-->
+    
+    <!--Мейн-->
+    <main>
+        <!--Блок з вибраними характеристиками-->
+        <div class="selected-options">
+            <p>Галицький</p>
+            <p>помірна ціна</p>
+            <p>європейська</p>
+            <p>wi-fi</p>
+            <p>5</p>
+        </div>
+
+        <!--Перелік закладів, що відповідає вибраним характеристикам-->
+        <div class="restaurants">
+            <a href="#">
+                <div class="restaurant">
+                    <img class="restaurant-photo" src="img/epic_restaurant/restaurant_epic.png">
+                    <div class="info">
+                        <h3>Epic Cheeseburger</h3>
+                        <p class="cuisine-type">американська, європейська кухня</p>
+                        <p class="offer">доставка, тераса, wi-fi</p>
+                    </div>
+                    <div class="establishment-details">
+                        <div class="rate">
+                            <img class="rating-icon" src="img/rating/rate_5.svg">
+                            <p class="price">помірна ціна</p>
+                        </div>
+                        <div class="location">
+                            <img class="location-icon" src="img/location_icon.svg">
+                            <p class="district">Галицький район</p>
+                        </div>
+                    </div>
+                </div>
+            </a>            
+            <a href="#">
+                <div class="restaurant">
+                    <img class="restaurant-photo" src="img/puzatahata_restaurant/restaurant_puzatahata.png">
+                    <div class="info">
+                        <h3>Puzata Hata</h3>
+                        <p class="cuisine-type">європейська кухня</p>
+                        <p class="offer">доставка, тераса</p>
+                    </div>
+                    <div class="establishment-details">
+                        <div class="rate">
+                            <img class="rating-icon" src="img/rating/rate_5.svg">
+                            <p class="price">помірна ціна</p>
+                        </div>
+                        <div class="location">
+                            <img class="location-icon" src="img/location_icon.svg">
+                            <p class="district">Центральний район</p>
+                        </div>
+                    </div>
+                </div>
+            </a>            
+            <a href="#">
+                <div class="restaurant">
+                    <img class="restaurant-photo" src="img/pidzemellya_restaurant/restaurant_pidzemellya.png">
+                    <div class="info">
+                        <h3>Pidzemellya</h3>
+                        <p class="cuisine-type">європейська кухня</p>
+                        <p class="offer">тераса, доставка, можна з тваринами, wi-fi</p>
+                    </div>
+                    <div class="establishment-details">
+                        <div class="rate">
+                            <img class="rating-icon" src="img/rating/rate_4.svg">
+                            <p class="price">висока кухня</p>
+                        </div>
+                        <div class="location">
+                            <img class="location-icon" src="img/location_icon.svg">
+                            <p class="district">Центральний район</p>
+                        </div>
+                    </div>
+                </div>
+              </a>       
+        </div>
+    </main>
+    <!--Кінець блоку мейн-->
+
+    <!--Футер-->
+    <footer>
+        <div class="buttons" style="gap: 229px;">
+            <a href="filter.html"><button id="filter-only" class="button"><img src="img/main_buttons/filter_main_icon.svg"></button></a>
+            <a href="#"><button id="location-button" class="button"><img id="like-icon" src="img/main_buttons/location-button.svg"></button></a>
+        </div>
+    </footer>
+    <!--Кінець блоку Футер-->
+    <script src="js/main.js"></script>
+</body>
+</html>

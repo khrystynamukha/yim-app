@@ -1,0 +1,115 @@
+<!-- establishments.html -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фільтр</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="sources/line-awesome-1.3.0/1.3.0/css/line-awesome.min.css" rel="stylesheet">
+    <link href="img/ICON.png " rel="icon">
+</head>
+<body>
+    <!--Хедер-->
+    <header>
+        <a id="button-back" href="establishment.html">назад</a>
+        <div class="page-title">фільтр</div>
+        <a id="signin" href="signin.html">вхід</a>
+    </header>
+    <!--Кінець блоку Хедер-->
+    
+    <!--Мейн-->
+    <main>
+        <!--Вибір району-->
+        <div class="district-filter">
+            <h2>район</h2>
+            <div class="district-option">
+                <div class="district-option-one">
+                    <p>Галицький</p>
+                    <p>Личаківський</p>
+                    <p>Шевченківський</p>
+                </div>
+                <div class="district-option-two">
+                    <p>Залізничний</p>
+                    <p>Франківський</p>
+                    <p>Сихівський</p>
+                </div>
+            </div>
+        </div>  
+
+        <!--Вибір цінової категорії-->
+        <div class="price-category-filter">
+            <h2>цінова категорія</h2>
+            <div class="price-category-option">
+                <p>недорога кухня</p>
+                <p>помірна ціна</p>
+                <p>висока кухня</p>
+            </div>
+        </div>
+
+        <!--Вибір типу кухні-->
+        <div class="cuisine-filter">
+            <h2>кухня</h2>
+            <div class="cuisine-option">
+                <i class="las la-search"></i>
+                <p>введи тип кухні</p>
+            </div>
+        </div>
+
+        <!--Вибір для чого підходить заклад-->
+        <div class="good-for-filter">
+            <h2>підходить для</h2>
+            <div class="good-for-option">
+                <div class="good-for-option-one">
+                    <p>сім’я з дітьми</p>
+                    <p>бізнес-зустріч</p>
+                </div>
+                <div class="good-for-option-two">
+                    <p>велика компанія</p>
+                    <p>побачення</p>
+                </div>  
+            </div>
+            <p class="more-button">більше...</p>
+        </div>
+
+        <!--Вибір спеціалних пропозицій-->
+        <div class="special-offer-filter">
+            <h2>особливі послуги</h2>
+            <div class="special-offer-option">
+                <div class="special-offer-option-one">
+                    <p>доставка</p>
+                    <p>з тваринами</p>
+                </div>
+                <div class="special-offer-option-two">
+                    <p>wi-fi</p>
+                    <p>тераса</p>
+                </div>  
+            </div>
+            <p class="more-button">більше...</p>
+        </div>
+        
+        <!--Вибір оцінки-->
+        <div class="rate-filter">
+            <h2>оцінка</h2>
+            <div class="rate-option">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+            </div>
+        </div>
+    </main>
+    <!--Кінець блоку мейн-->
+
+    <!--Футер-->
+    <footer>
+        <div class="buttons" style="gap: 50px;">
+            <a href="filtered.html"><button id="filter-wide" class="button">фільтрувати</button></a>
+            <a href="establishment.html"><button id="establishment" class="button"><img src="img/main_buttons/establishment_main_icon.svg"></button></a>  
+        </div>
+    </footer>
+    <!--Кінець блоку Футер-->
+    <script src="js/main.js"></script>
+</body>
+</html>
